@@ -4,9 +4,6 @@ using System.Threading.Tasks;
 
 public class HtmlFetcher
 {
-    /// <summary>
-    /// מבצע קריאת GET א-סינכרונית לכתובת URL ומחזיר את תוכן ה-HTML.
-    /// </summary>
     public async Task<string> Load(string url)
     {
         using (HttpClient client = new HttpClient())
