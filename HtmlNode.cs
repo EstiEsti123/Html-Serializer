@@ -1,15 +1,11 @@
 ﻿using System.Collections.Generic;
 
-// מחלקת בסיס לייצוג רכיב כלשהו ב-DOM
 public abstract class HtmlNode
 {
     public abstract string NodeType { get; }
 
-    // מאפיין ליצירת עץ: הפניה לאלמנט האב
     public HtmlTag Parent { get; set; }
 }
-
-// ייצוג של טקסט שנמצא בין התגיות
 public class HtmlText : HtmlNode
 {
     public override string NodeType => "Text";
